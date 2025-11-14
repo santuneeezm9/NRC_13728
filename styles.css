@@ -1,0 +1,152 @@
+/* === HEADER PRINCIPAL === */
+.topheader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: white;
+  width: 100%;
+  height: 80px;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  padding: 0 40px; 
+  box-sizing: border-box; 
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1)
+  z-index: 1000; 
+}
+
+body {
+  margin: 0;
+  padding-top: 80px;
+}
+
+/* === MENÚ HORIZONTAL === */
+.Menu-Horizontal {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 10px; 
+  margin: 0;
+  padding: 0;
+}
+
+/* === ELEMENTOS DEL MENÚ === */
+.Menu-Horizontal li {
+  position: relative;
+}
+
+.Menu-Horizontal li a {
+  display: block;
+  color: #003b5c;
+  font-weight: 500;
+  padding: 10px 15px;
+  text-decoration: none;
+  transition: all 0.2s ease-in-out;
+}
+
+.Menu-Horizontal li a:hover {
+  color: red;
+  font-size: 18px;
+}
+
+/* === MENÚ VERTICAL (DESPLEGABLE) === */
+.Menu-Vertical {
+  list-style: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+
+  display: none;
+  flex-direction: column;
+
+  width: 160px;
+  background-color: white;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 5px 0;
+  z-index: 1001;
+}
+
+.Menu-Horizontal li:hover .Menu-Vertical {
+  display: flex;
+}
+
+.Menu-Vertical li a {
+  padding: 10px 15px;
+  color: #003b5c;
+}
+
+.Menu-Vertical li a:hover {
+  background-color: #f0f0f0;
+  color: red;
+}
+
+/*SECCION  PERSONAS*/
+.seccion-personas{
+
+  padding: 60px 20px;
+  background-color: white;
+}
+.div-gral-persona{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  gap: 40px;
+}
+.div-pers-texto{
+  flex:1;
+}
+.div-pers-texto h2{
+  color:blue;
+  line-height: 1.6;
+}
+.div-pers-texto p{
+  text-align: justify;
+  color:black;
+  font-size: 18px;
+}
+
+.div-pers-img{
+  flex:1;
+}
+.div-pers-img img{
+  width: 100%;
+  max-width: 500px;
+}
+
+/*SECCION EMPRESA*/
+
+.seccion-empresa{
+  padding: 60px 20px;
+  background-color: white;
+}
+.div-gral-empresa{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  gap: 40px;
+}
+.div-empresa-texto{
+  flex: 1;
+}
+.div-empresa-texto h2{
+  color:blue;
+}
+.div-empresa-texto p{
+  text-align: justify;
+  color: black;
+  font-size: 18px;
+}
+.div-empresa-video{
+  flex: 1;
+}
+.div-empresa-video iframe{
+  width: 100%;
+  max-width: 500px;
+}
