@@ -124,6 +124,87 @@
         </div>
       </div>
     </section>
+    <section class="seccion-formulario">
+      <div class="div-cont-formulario">
+        <h2>Formulario de Registro</h2>
+        <p>Complete todos los campos</p>
+        <form class="formulario">
+          <!--imput LABEL-->
+          <div class="campo">
+            <label for="nombre">Nombres completos</label>
+            <input
+              type="text"
+              id="nombre"
+              name="nombre"
+              placeholder="Ingrese sus nombres"
+            />
+          </div>
+          <!--imput-->
+          <div class="campo">
+            <label for="nombre">Pais</label>
+            <select id="pais" name="pais">
+              <option value="">seleccione un pais</option>
+              <option value="peru">Peru</option>
+              <option value="colombia">Colombia</option>
+              <option value="argentina">Argentina</option>
+              <option value="mexico">Mexico</option>
+            </select>
+          </div>
+          <!--RADIO-->
+          <div class="campo">
+            <label>interes</label>
+            <ul class="lista derechos">
+              <li>
+                <label
+                  ><input type="checkbox" rang="interes" value="a" />aaaa</label
+                >
+              </li>
+              <li>
+                <label
+                  ><input type="checkbox" rang="interes" value="b" />bbbb</label
+                >
+              </li>
+              <li>
+                <label
+                  ><input type="checkbox" rang="interes" value="c" />cccc</label
+                >
+              </li>
+              <li>
+                <label
+                  ><input type="checkbox" rang="interes" value="d" />dddd</label
+                >
+              </li>
+            </ul>
+          </div>
+
+          <!--RADIO-->
+          <div class="campo">
+            <label>sexo</label>
+            <ul class="lista-radio">
+              <li>
+                <label
+                  ><input
+                    type="radio"
+                    rang="sexo"
+                    value="masculino"
+                  />Masculino</label
+                >
+              </li>
+              <li>
+                <label
+                  ><input
+                    type="radio"
+                    rang="sexo"
+                    value="femenino"
+                  />Femenino</label
+                >
+              </li>
+            </ul>
+          </div>
+          <button type="submit">Enviar</button>
+        </form>
+      </div>
+    </section>
     <!--Footer-->
     <section id="footer">
       <footer class="footer">
