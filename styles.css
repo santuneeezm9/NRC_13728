@@ -150,3 +150,79 @@ body {
   width: 100%;
   max-width: 500px;
 }
+
+/* Sección Formulario */
+.seccion-formulario {
+  background-color: #e6e6e6;
+  padding: 2.5rem;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 2.5rem;
+}
+
+/* Contenedor */
+.div-cont-formulario {
+  background-color: #ffffff;
+  padding: 1.875rem;
+  border: 2px solid #1064f0;
+  border-radius: 0.625rem;
+  width: 100%;
+  max-width: 31.25rem;
+}
+
+/* Campo individual */
+.campo {
+  padding: 0.938rem;
+  border: 1px solid #ddd;
+  border-radius: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+/* Labels */
+.formulario label {
+  display: block;
+  font-weight: 600;
+  margin-bottom: 0.4rem;
+  color: #222;
+}
+
+/* Inputs */
+.formulario input[type="text"],
+.formulario select {
+  width: 100%;
+  padding: 0.5rem;
+  border: 1px solid #826a4a;
+  border-radius: 4px;
+  background-color: #fff;
+}
+
+/* Listas de checkbox y radio */
+.lista,
+.lista-radio {
+  list-style: none;
+  padding: 0.6rem;
+  margin: 0;
+  border: 1px solid #ccc;
+  background-color: #f3f3f3;
+  border-radius: 0.313rem;
+}
+
+/* Botón */
+.formulario button {
+  background-color: chocolate;
+  color: white;
+  border: 2px solid black;
+  padding: 0.6rem 1rem;
+  width: 100%;
+  font-size: 1rem;
+  cursor: pointer;
+  margin-top: 1rem;
+  border-radius: 0.3rem;
+  transition: 0.2s ease-in-out;
+}
+
+/* Hover del botón */
+.formulario button:hover {
+  background-color: #b5530c;
+  transform: scale(1.02);
+}

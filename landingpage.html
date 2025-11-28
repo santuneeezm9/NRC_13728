@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Mi Web Site</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="Pie.css" />
+  </head>
+
+  <body>
+    <!-- Navegación Principal -->
+    <nav class="topheader">
+      <!-- Logo -->
+      <a href="#" class="logo">
+        <img
+          src="img/BBVA_2019.svg.png"
+          alt="BBVA Logo"
+          height="50"
+          width="100"
+        />
+      </a>
+
+      <!-- Menú Horizontal -->
+      <ul class="Menu-Horizontal">
+        <li><a href="#">Personas</a></li>
+        <li><a href="#">Empresas</a></li>
+
+        <!-- Menú Desplegable de Productos -->
+        <li class="dropdown">
+          <a href="#">Productos</a>
+          <ul class="Menu-Vertical">
+            <li><a href="#">Tarjetas</a></li>
+            <li><a href="#">Cuentas</a></li>
+            <li><a href="#">Préstamos</a></li>
+            <li><a href="#">Seguros</a></li>
+          </ul>
+        </li>
+
+        <li><a href="#">Abre tu cuenta</a></li>
+        <li><a href="#">Contáctanos</a></li>
+      </ul>
+    </nav>
+    <!--SECCION PERSONAS-->
+    <section class="seccion-personas">
+      <div class="div-gral-persona">
+        <div class="div-pers-texto">
+          <h2>Seccion Personas</h2>
+          <p>
+            (Buenos Aires, 1960 - Dique Luján, 2020) Futbolista argentino, uno
+            de los más grandes de la historia, comparado a menudo con el
+            legendario Pelé. Si bien su habilidad con el balón y su depurada
+            técnica igualaron la del brasileño, la trayectoria de Maradona fue
+            mucho más irregular: su carácter difícil, los problemas de salud y
+            la adicción a las drogas malograron parte de su carrera, pero no
+            impidió que su genialidad brillase en numerosas ocasiones. Tras
+            ganar en 1979 el campeonato mundial juvenil con la selección de su
+            país y triunfar dos años después en el Boca Juniors, inició un
+            periplo europeo que lo llevó al F.C. Barcelona (1982-84), el Nápoles
+            (1984-91) y el Sevilla (1992-93). De regreso a Argentina jugó en el
+            Newell's Old Boys y en el Boca Juniors antes de retirarse en 1997.
+            Con la selección argentina participó en cuatro mundiales y se alzó
+            con el título mundial en el de México (1986), en el que tuvo una
+            portentosa e inolvidable actuación.
+          </p>
+
+          <p>
+            Durante su etapa italiana contrajo matrimonio con Claudia Villafañe,
+            de la que tendría dos hijas, Dalma y Giannina. Maradona permaneció
+            en el Nápoles hasta 1991, año en que un control antidopaje detectó
+            consumo de cocaína, por lo que fue suspendido durante quince meses.
+            Poco después fue detenido en Buenos Aires en una redada policial. El
+            28 de abril de 1992 quedó en libertad y tuvo que afrontar una
+            acusación de suministro y tenencia de drogas.
+          </p>
+        </div>
+
+        <div class="div-pers-img">
+          <img src="img\maradona.jpg" />
+        </div>
+      </div>
+    </section>
+    <!--SECCION EMPRESAS-->
+    <section class="seccion-empresa">
+      <div class="div-gral-empresa">
+        <div class="div-empresa-texto">
+          <h2>Seccion Empresas</h2>
+          <p>
+            Donde su figura brilló con mayor intensidad fue sin duda en el
+            mundial de México, cuando su capacidad de arrastrar a toda la
+            defensa del equipo rival con su impresionante facilidad para la
+            gambeta y proyección dejó pasmados a los millones de aficionados que
+            seguían el campeonato a través de la televisión. Particularmente
+            memorable fue su actuación en los cuartos de final: cuatros años
+            después de la Guerra de las Malvinas, ingleses y argentinos se
+            enfrentaban en un partido de máxima rivalidad, que terminó con la
+            victoria de los albicelestes por 2 a 1, con dos goles de Maradona.
+          </p>
+          <p>
+            El primero de ellos debió haber sido anulado (Maradona metió con el
+            puño un balón que disputaba al guardameta británico), pero no por
+            ello es menos famoso: al preguntársele después si había marcado el
+            tanto con la mano, Maradona respondió que había sido "la mano de
+            Dios", y con ese nombre pasó a la historia. El segundo, justamente
+            llamado el gol del siglo, fue una de sus genialidades difícilmente
+            superables: arrancando de su propio campo, Maradona dribló, uno tras
+            otro, a cinco jugadores ingleses y al portero, y marcó de un
+            zurdazo.
+          </p>
+        </div>
+
+        <div class="div-empresa-video">
+          <iframe
+            width="560"
+            height="315"
+            src="https://www.youtube.com/embed/O8G9ytZg-bM?si=364bYM7bpjxZJbWv"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerpolicy="strict-origin-when-cross-origin"
+            allowfullscreen
+          ></iframe>
+        </div>
+      </div>
+    </section>
+
+    <section class="seccion-formulario">
+      <div class="div-cont-formulario">
+        <h2>Formulario de Registro</h2>
+        <p>Complete todos los campos</p>
+
+        <form class="formulario">
+          <!-- Campo Nombre -->
+          <div class="campo">
+            <label for="nombre">Nombres completos</label>
+            <input
+              type="text"
+              id="nombre"
+              name="nombre"
+              placeholder="Ingrese sus nombres"
+              required
+            />
+          </div>
+
+          <!-- Campo País -->
+          <div class="campo">
+            <label for="pais">País</label>
+            <select id="pais" name="pais" required>
+              <option value="">Seleccione un país</option>
+              <option value="peru">Perú</option>
+              <option value="colombia">Colombia</option>
+              <option value="argentina">Argentina</option>
+              <option value="mexico">México</option>
+            </select>
+          </div>
+
+          <!-- Intereses -->
+          <div class="campo">
+            <fieldset>
+              <legend>Intereses</legend>
+              <ul class="lista derechos">
+                <li>
+                  <label for="int-a">
+                    <input
+                      type="checkbox"
+                      id="int-a"
+                      name="interes[]"
+                      value="a"
+                    />
+                    aaaa
+                  </label>
+                </li>
+
+                <li>
+                  <label for="int-b">
+                    <input
+                      type="checkbox"
+                      id="int-b"
+                      name="interes[]"
+                      value="b"
+                    />
+                    bbbb
+                  </label>
+                </li>
+
+                <li>
+                  <label for="int-c">
+                    <input
+                      type="checkbox"
+                      id="int-c"
+                      name="interes[]"
+                      value="c"
+                    />
+                    cccc
+                  </label>
+                </li>
+
+                <li>
+                  <label for="int-d">
+                    <input
+                      type="checkbox"
+                      id="int-d"
+                      name="interes[]"
+                      value="d"
+                    />
+                    dddd
+                  </label>
+                </li>
+              </ul>
+            </fieldset>
+          </div>
+
+          <!-- Sexo -->
+          <div class="campo">
+            <fieldset>
+              <legend>Sexo</legend>
+              <ul class="lista-radio">
+                <li>
+                  <label for="sexo-m">
+                    <input
+                      type="radio"
+                      id="sexo-m"
+                      name="sexo"
+                      value="masculino"
+                      required
+                    />
+                    Masculino
+                  </label>
+                </li>
+
+                <li>
+                  <label for="sexo-f">
+                    <input
+                      type="radio"
+                      id="sexo-f"
+                      name="sexo"
+                      value="femenino"
+                    />
+                    Femenino
+                  </label>
+                </li>
+              </ul>
+            </fieldset>
+          </div>
+
+          <button type="submit">Enviar</button>
+        </form>
+      </div>
+    </section>
+
+    <!--Footer-->
+    <section id="footer">
+      <footer class="footer">
+        <div class="footer-container">
+          <!-- Logo y nombre de sitio -->
+          <div class="footer-brand">
+            <img src="img/senati.png" alt="Logo" class="footer-logo" />
+            <p>SENATI</p>
+            <small>© 2025 Todos los derechos reservados</small>
+          </div>
+
+          <!-- Enlaces legales -->
+          <div class="footer-links">
+            <h4>Legal</h4>
+            <a href="/Documentos/3.politica-privacidad.pdf"
+              >Política de Privacidad</a
+            >
+            <!-- Dentro de href llama a un documento pdf con la poltica-->
+            <a href="#">Términos y Condiciones</a>
+            <!-- Dentro de href llama a un documento pdf con los terminos y condiciones-->
+            <a href="/Documentos/LeyProteccionDatos.pdf">Protección de Datos</a>
+          </div>
+
+          <!-- Redes sociales con íconos personalizados -->
+          <div class="footer-social">
+            <h4>Síguenos</h4>
+            <a href="#"
+              ><img
+                src="https://cdn-icons-png.flaticon.com/512/145/145802.png"
+                alt="Facebook"
+                class="social-icon"
+            /></a>
+            <a href="#"
+              ><img
+                src="https://cdn-icons-png.flaticon.com/512/145/145812.png"
+                alt="Instagram"
+                class="social-icon"
+            /></a>
+            <a href="#"
+              ><img
+                src="https://cdn-icons-png.flaticon.com/512/145/145807.png"
+                alt="LinkedIn"
+                class="social-icon"
+            /></a>
+            <a href="#"
+              ><img
+                src="https://cdn-icons-png.flaticon.com/512/145/145806.png"
+                alt="Twitter"
+                class="social-icon"
+            /></a>
+          </div>
+        </div>
+      </footer>
+    </section>
+  </body>
+</html>
