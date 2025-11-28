@@ -15,7 +15,7 @@
   background: white;
   padding: 2.5rem; /* 40px */
   border-radius: 0.625rem; /* 10px */
-  box-shadow: 0 0.25rem 0.9375rem rgba(0, 0, 0, 0.2); /* Sombra */
+  box-shadow: 0 0.5rem 0.9375rem rgba(0, 0, 0, 0.2); /* Sombra */
   width: 100%;
   max-width: 25rem; /* 400px, el ancho máximo */
   text-align: center;
